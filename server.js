@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.get('/temperature', function (req, res) {
    fs.readFile(__dirname + "/" + filename, 'utf8', function (err, data) {
 	if(err)
-	   res.sendStatus(500);
+	   res.sendStatus(204);
 	res.end(data) ;
    });
 });
