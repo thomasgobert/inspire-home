@@ -1,9 +1,15 @@
 # inspire-home
 
-usage :
-``npm install express
-npm install fs
-npm install body-parser``
+basic project to host climat manager 
 
-starting the webserver : 
+### Installation :
+
+`npm install express`
+
+`npm install fs`
+
+`npm install body-parser`
+
+### Starting the webserver : 
+
 `node server.js`
