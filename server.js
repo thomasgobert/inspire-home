@@ -4,7 +4,7 @@ var fs = require("fs");
 
 var app = express();
 
-var filename = "temperature.json";
+var filename = "datas";
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
