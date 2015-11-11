@@ -11,18 +11,17 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-
 app.get('/temperature', function (req, res) {
    fs.readFile(__dirname + "/" + filename, 'utf8', function (err, data) {
-	   if(err)
-		   res.sendStatus(500);
-	 res.end(data) ;
+	if(err)
+	   res.sendStatus(500);
+	res.end(data) ;
    });
 });
 app.post('/temperature', function (req, res) {
    fs.writeFile(__dirname + "/" + filename, req.body.temperature, function (err) {
-		if(err)
-			res.sendStatus(500);
+	if(err)
+		res.sendStatus(500);
 	res.end();
    });
 });
